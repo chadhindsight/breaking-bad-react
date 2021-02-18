@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Search = ({ getQuery }) => {
     const [text, setText] = useState('')
-
+    // logic that gets executed when search stuff happens
     const onChange = (q) => {
         setText(q)
         getQuery(q)

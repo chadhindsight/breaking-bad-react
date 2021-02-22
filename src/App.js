@@ -12,7 +12,7 @@ function App() {
   const [query, setQuery] = useState('')
 
   useEffect(() => {
-    // You cant put an async function directly on useEffect so that's why we have fetchItems!
+    // You cant put an async function directly on useEffect so that's why we have fetchItems
     const fetchItems = async () => {
       setIsLoading(true)
       const result = await axios(
